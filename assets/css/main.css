@@ -34,7 +34,7 @@ p {
 
 .row {
     height: 100vh;
-    background-image: url(.../assets/images/bg.jpg);
+    background-image: url(https://cireeijie.github.io/js-mini-programs/assets/images/bg.jpg);
     background-position: center;
     background-size: cover;
     backdrop-filter: blur(10px);
