@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+h1 {
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+input {
+    padding: 8px;
+    border: none;
+    margin: 5px;
+    border-radius: 50px;
+    font-size: 12px;
+}
+
+input:focus {
+    outline: none;
+}
+
+label {
+    font-size: 14px;
+}
+
+p {
+    font-size: 12px;
+}
+
+.row {
+    height: 100vh;
+    background-image: url(/assets/images/bg.jpg);
+    background-position: center;
+    background-size: cover;
+    backdrop-filter: blur(10px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapper {
+    display: flex;
+    gap: 20px;
+}
+
+.first-column {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#integer-checker-container, 
+#odd-or-even-container,
+#voter-eligibility {
+    padding: 20px;
+    background-image: linear-gradient(to right bottom, rgba(255,255,255,0.7), rgba(255,255,255,0.3));
+    border-radius: 5px;
+}
+
+#integer-checker-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#integer-checker-container input,
+#odd-or-even-container input {
+    text-align: center;
+}
+
+#integer-checker-container input::placeholder,
+#odd-or-even-container input::placeholder {
+    text-align: center;
+}
+
+.calculator-container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#odd-or-even-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#voter-eligibility {
+    width: 500px;
+}
+
+#voter-eligibility .input-container input {
+    width: 200px;
+}
+
+#voter-eligibility label {
+    width: 80px;
+}
+
+#voter-eligibility #submit-btn {
+    background-color: #FE9515;
+    color: white;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: opacity .3s ease;
+}
+
+#voter-eligibility #submit-btn:hover {
+    animation: pop .3s linear 1;
+}
+
+#voter-eligibility p {
+    animation: pop 0.3s linear 1;
+}
+
+.input-container,
+.human-validator {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+
+.human-validator label {
+    width: 150px !important;
+}
+
+.fa-circle-xmark,
+.fa-square-minus {
+    color: #DF2E38;
+}
+
+.fa-circle-check,
+.fa-square-plus {
+    color: #5F8D4E;
+}
+
+@keyframes pop{
+    50% {
+        transform: scale(1.2);
+    }
+}
+

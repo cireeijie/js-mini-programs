@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Mini Activity</title>
+    <link rel="stylesheet" href="assets/css/main.css">
+    <script src="https://kit.fontawesome.com/8876338ff1.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <section>
+        <div class="row">
+            <div class="container">
+                <div class="wrapper">
+                    <div class="first-column">
+                        <div id="integer-checker-container">
+                            <h1>Integer Checker</h1>
+                            <div class="calculator-container">
+                                <input id="integer" type="text" placeholder="Enter a number">
+                                <p id="integer-result"></p>
+                            </div>
+                        </div>
+                        <div id="odd-or-even-container">
+                            <h1>Odd or Even</h1>
+                            <input type="text" id="oddOrEven" placeholder="Enter a number">
+                            <p id="ooe-result"></p>
+                        </div>
+                    </div>
+                    <div id="voter-eligibility">
+                        <form action="" id="voter-eligibility-form">
+                            <h1>Voter Eligibility</h1>
+                            <div class="input-container">
+                                <label for="fullname">Full Name</label>
+                                <input type="text" id="fullname" name="fullname" placeholder="Fullname">
+                                <p id="name-validator"></p>
+                            </div>
+                            <div class="input-container">
+                                <label for="age">Age</label>
+                                <input type="text" id="age" name="age" placeholder="Age">
+                                <p id="age-validator"></p>
+                            </div>
+                            <div class="input-container">
+                                <label for="citizenship">Citizenship</label>
+                                <input type="text" id="citizenship" name="citizenship" placeholder="ex. Filipino">
+                                <p id="citizenship-validator"></p>
+                            </div>
+                            <div class="input-container">
+                                <label for="residency">Residency</label>
+                                <input type="text" id="residency" name="residency" placeholder="Years of residency in PH.">
+                                <p id="residency-validator"></p>
+                            </div>
+                            <div class="human-validator">
+                                <input type="checkbox" id="human" name="human" required>
+                                <label for="human">Are you a human?</label>
+                                <p id="human-validator"></p>
+                            </div>
+                            <input id="submit-btn" type="submit" value="Submit">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <script src="assets/script/global.js"></script>
+</body>
+</html>
